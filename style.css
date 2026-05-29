@@ -79,6 +79,7 @@ header p { font-size: 1.1rem; color: #94a3b8; max-width: 600px; margin: 0 auto 2
 .btn:hover { transform: translateY(-2px); opacity: 0.9; }
 .btn-tg { background-color: #24A1DE; color: white; }
 .btn-wa { background-color: #25D366; color: white; }
+.btn-yt { background-color: #FF0000; color: white; }
 
 /* ========================================== */
 /* 4. РАЗДЕЛЫ И СЕТКА КАРТОЧЕК                */
