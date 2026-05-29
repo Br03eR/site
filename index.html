@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>DevLog | NN</title>
+    <!-- Иконка вкладки -->
+    <link rel="icon" type="image/webp" href="assets/logo.webp">
     <!-- Подключение иконок FontAwesome -->
     <link rel="stylesheet" href="https://cloudflare.com">
     <!-- Подключение ваших стилей -->
@@ -14,32 +16,27 @@
     <div class="container">
         <!-- Визитка и Контакты -->
         <header>            
-            <div class="avatar"><img src="assets/logo.webp"></div>
-            <h1></h1>
-<!--             <p>Создаю независимые игры и обучаю разработке. Ниже вы можете найти мои актуальные проекты и связаться со мной напрямую.</p>-->
-            <div class="social-buttons">
+            <!-- Кнопка переключения темы -->
+             <button id="theme-toggle" class="theme-toggle" ></button>
 
-                <a href="https://t.me/nondevlog" target="_blank" class="btn btn-tg">
+            <div class="avatar">
+                <img src="assets/logo.webp" alt="Логотип">
+            </div>
+            
+            <div class="social-buttons">
+                <a href="https://t.me" target="_blank" class="btn btn-tg">
                     Telegram
                 </a>
-                
-                <a href="https://youtube.com/@blau-gf2gz?si=J1OoZfuav5uWEtL0" target="_blank" class="btn btn-yt">
+                <a href="https://youtube.com" target="_blank" class="btn btn-yt">
                     YouTube
                 </a>
             </div>
-
-<!--             <div style="margin-top: 25px;">-->
-<!--                 <a href="about.html" class="link-more">Подробнее обо мне →</a>-->
-<!--             </div>-->
         </header>
 
-
-
-
-        <!-- Блок с Играми -->
-        <section id="games">
+        <!-- Блок с Ассетами -->
+        <section id="assets">
             <h2>МОИ АССЕТЫ</h2>
-            <p>В этом разделе можно будет скачать сделанные мной ассеты для Unity</p>
+            <p class="section-desc">В этом разделе можно будет скачать сделанные мной ассеты для Unity</p>
             <br>
             <div class="grid">
                 <div class="card">
@@ -69,10 +66,10 @@
             </div>
         </section>
 
-                <!-- Блок с Играми -->
-        <section id="games">
+        <!-- Блок с Проектами -->
+        <section id="projects">
             <h2>МОИ ПРОЕКТЫ</h2>
-            <p>А здесь я буду оставлять ссылки на свои игры, если до этого дойдет</p>
+            <p class="section-desc">А здесь я буду оставлять ссылки на свои игры, если до этого дойдет</p>
             <br>
             <div class="grid">
                 <div class="card">
@@ -87,9 +84,19 @@
         </section>
 
         <footer>
+            <!-- Клик по этой картинке откроет окно -->
+            <img src="assets/qr-code.png" alt="QR Code" id="qr-trigger" style="cursor: pointer;">
             <p>© 2026 Все права защищены</p>
+
+            <!-- Всплывающее окно (по умолчанию скрыто) -->
+            <div id="qr-modal" class="modal">
+                <img class="modal-content" src="assets/qr-code.png" alt="Увеличенный QR Code">
+            </div>
         </footer>
     </div>
-<script src="slider.js"></script>
+
+    <!-- Подключение скриптов -->
+    <script src="theme.js"></script>
+    <script src="slider.js"></script>
 </body>
 </html>

@@ -1,0 +1,20 @@
+
+        <!-- Блок слайдера -->
+        <div class="slider-container">
+            <div class="slider">
+                <!-- Слайд 1 -->
+                <div class="slide active">
+                    <img src="https://unsplash.com" alt="Скриншот 1">
+                </div>
+                <!-- Слайд 2 -->
+                <div class="slide">
+                    <img src="https://unsplash.com" alt="Скриншот 2">
+                </div>
+                <!-- Слайд 3 -->
+                <div class="slide">
+                    <img src="https://unsplash.com" alt="Скриншот 3">
+                </div>
+
+                <!-- Кнопки управления -->
+            </div>
+        </div>
