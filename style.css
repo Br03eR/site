@@ -217,7 +217,8 @@ h2 { font-size: 1.8rem; margin-bottom: 25px; color: #818cf8; border-bottom: 2px 
     
     margin-top: auto; /* <-- МАГИЯ: выталкивает кнопку в самый низ карточки */
 }
-.card-btn:hover { background-color: #4338ca; }
+.card-btn:hover { background-color: #4338ca; 
+    cursor: pointer;}
 .card-btn:disabled,
 .card-btn:disabled { 
     font-family: 'Segoe UI', Roboto, sans-serif;    
